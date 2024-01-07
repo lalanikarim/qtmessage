@@ -1,0 +1,12 @@
+#ifndef QTMESSAGELIB_GLOBAL_H
+#define QTMESSAGELIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QTMESSAGELIB_LIBRARY)
+#define QTMESSAGELIB_EXPORT Q_DECL_EXPORT
+#else
+#define QTMESSAGELIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTMESSAGELIB_GLOBAL_H
